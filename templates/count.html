@@ -1,0 +1,17 @@
+<h1>it worked</h1>
+
+<a href="{% url 'home'%}">Start Again</a>
+
+
+<p><b>{{ broketext }} words founded</b></p>
+
+<h2>Your Text:</h2>
+
+{{ fulltext }}
+<h1>Word Count:</h1>
+
+{% for word,countword in sortedwords %}
+{{ word }} - {{ countword }}
+<br />
+
+{% endfor %}
